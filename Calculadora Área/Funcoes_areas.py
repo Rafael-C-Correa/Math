@@ -3,7 +3,7 @@ def area_circulo():
     print('Estamos falando de um Círculo.')
     r = float(input('Diga o valor do Raio: '))
     area_circulo = (r ** 2) * 3.14
-    print('A area do Circulo é:', area_circulo)
+    print(f'A area do Circulo é: {area_circulo:.1f}')
 
 #ÁREA TRIANGULO RETANGULO
 def area_triangulo_retangulo():
@@ -11,7 +11,7 @@ def area_triangulo_retangulo():
     bt = float(input('Diga o valor da base: '))
     ht = float(input('Diga o valor da altura: '))
     area_triangulo = (bt * ht) / 2
-    print('A area do Triagulo Retangulo é: ', area_triangulo)
+    print(f'A area do Triagulo Retangulo é: {area_triangulo:.1f}')
 
 #ÁREA TRIANGULO EQUILÁTERO
 def area_triangulo_equilátero():
@@ -19,7 +19,7 @@ def area_triangulo_equilátero():
     lt = float(input('Diga o valor do lado: '))
     import math
     area_triangulo = (math.sqrt(3)/4) * (lt ** 2)
-    print('A area do Triagulo Equilátero é: ', area_triangulo)
+    print(f'A area do Triagulo Equilátero é:  {area_triangulo:.1f}')
 
 #ÁREA TRIANGULO ISÓSCELES 
 def area_triangulo_isosceles():
@@ -27,7 +27,7 @@ def area_triangulo_isosceles():
     lt = float(input('Diga o valor do lado: '))
     ht = float(input('Diga o valor da altura: '))
     area_triangulo = (lt * ht) / 2
-    print('A area do Triagulo Isósceles é: ', area_triangulo)
+    print(f'A area do Triagulo Isósceles é: {area_triangulo:.1f}')
 
 #ÁREA DO QUADRADO EQUILÁTERO
 def area_quadrado():
@@ -50,7 +50,7 @@ def area_losango():
     Dl = float(input('Diga o valor da diagonal maior: '))
     dl = float(input('Diga o valor da diagonal menor: '))
     area_do_losango = (Dl * dl) / 2
-    print('A área do losango é:', area_do_losango)
+    print(f'A área do losango é: {area_do_losango:.1f}')
 
 #ÁREA DO TRAPÉZIO
 def area_trapezio():
@@ -59,17 +59,14 @@ def area_trapezio():
     bt = float(input('Diga o valor da base menor: '))
     ht = float(input('Diga o valor da altura: '))
     area_do_trapezio = ((Bt + bt) / 2) * ht
-    print('A area do Trapézio é: ', area_do_trapezio)
+    print(f'A area do Trapézio é: {area_do_trapezio:.1f}')
 
-#ÁREA DE DO POLÍGONO
+#ÁREA DO POLÍGONO
 def area_poligono():
     print('Área do polígono: ')
     ap = float(input('Diga o valor do apótema: '))
     pp = float(input('Diga o valor do semiperímetro: '))
     area_do_poligono = (ap * pp) / 2
-    print('A area do Trapézio é: ', area_do_poligono)
+    print(f'A area do Trapézio é: {area_do_poligono:.1f}')
 
 #--------------------------------------------------------------------------------#
-
-
-
