@@ -1,22 +1,30 @@
+import Funcoes_areas
+# FUNÇÃO CABEÇÁRIO
+
+def cabecario(titulo):
+    print('-'*(len(titulo)+2))
+    print(titulo.center(len(titulo)+2))
+    print('-' * (len(titulo)+2))
+
 # LOOP RESPOSTA
+
 def resposta():
     rep = str(input('Deseja calcular novamente? (Sim/Não) '))
     if rep == 'sim' or rep == 'Sim':
         calculadora()
     elif rep == 'Não' or rep == 'não':
         print('')
-        print('''------------------------
-    OBRIGADO POR USAR
-------------------------''')
+        cabecario('OBRIGADO POR USAR')
 
 # CALCULADORA
+
 def calculadora():
     print('')
-    op = int(input('''------------------------
+    op = int(input(f'''{'-' * 24}
        CALCULADORA
-------------------------
+{'-' * 24}
 Escolha uma opção abaixo
-------------------------
+{'-' * 24}
 [1] CÍRCULO
 [2] TRIANGULO RETANGULO
 [3] TRIANGULO EQUILÁTERO
@@ -27,39 +35,29 @@ Escolha uma opção abaixo
 [8] TRAPÉZIO
 [9] POLÍGONO
 [10] CANCELAR
-------------------------
+{'-' * 24}
     '''))
     if op == 1:
-        from Funcoes_areas import area_circulo
-        area_circulo()
+        Funcoes_areas.area_circulo()
     elif op == 2:
-        from Funcoes_areas import area_triangulo_retangulo
-        area_triangulo_retangulo()
+        Funcoes_areas.area_triangulo_retangulo()
     elif op == 3:
-        from Funcoes_areas import area_triangulo_equilátero
-        area_triangulo_equilátero()
+        Funcoes_areas.area_triangulo_equilátero()
     elif op == 4:
-        from Funcoes_areas import area_triangulo_isosceles
-        area_triangulo_isosceles()
+        Funcoes_areas.area_triangulo_isosceles()
     elif op == 5:
-        from Funcoes_areas import area_quadrado
-        area_quadrado()
+        Funcoes_areas.area_quadrado()
     elif op == 6:
-        from Funcoes_areas import area_retangulo
-        area_retangulo()
+        Funcoes_areas.area_retangulo()
     elif op == 7:
-        from Funcoes_areas import area_losango
-        area_losango()
+        Funcoes_areas.area_losango()
     elif op == 8:
-        from Funcoes_areas import area_trapezio
-        area_trapezio()
+        Funcoes_areas.area_trapezio()
     elif op == 9:
-        from Funcoes_areas import area_poligono
-        area_poligono()
+        Funcoes_areas.area_poligono()
     else:
-       print('''------------------------
-   OPERAÇÃO CANCELADA
-------------------------''') 
+       cabecario('OPERAÇÃO CANCELADA')
     print('')
     resposta()
+
 calculadora()
